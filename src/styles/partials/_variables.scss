@@ -1,0 +1,63 @@
+///////////////////////////////
+// COLORS
+$color-mastercard-red: #ed1c24;
+$color-mastercard-orange: #f99f1c;
+
+$black: #000;
+$white: #fff;
+
+$color-light-shades: #faf9fa;
+$color-light-accent: #8c8a99;
+$color-lighter-accent: #c5c3d6;
+$color-main-brand: #676b97;
+$color-main-brand-light: #767aa2;
+$color-dark-accent: #756e83;
+// $color-dark-shades: #1d1b22;
+$color-dark-shades: $black;
+
+// BUTTON COLORS
+$color-button-primary: $color-mastercard-red;
+$color-button-info: $color-dark-shades;
+$color-button-success: #549b65;
+$color-button-warning: #d18b2d;
+$color-button-danger: #f44336;
+
+// INPUT FIELD COLORS
+$color-input-border-selected: $color-dark-shades;
+
+// NAVBAR COLORS
+$color-navbar-background: $color-mastercard-orange;
+$color-navbar-highlight: $black;
+
+// PAGE COLORS
+$color-page: $color-light-shades;
+
+// TEXT COLORS
+$color-text-dark: $color-dark-shades;
+
+///////////////////////////////
+// SHADOWS
+$shadow-nav-bar: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
+$shadow-img-gallery: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
+
+///////////////////////////////
+// SPACING INCREMENTS
+$extra-tiny: 0.4rem;
+$tiny: 0.8rem;
+$extra-small: 1.6rem;
+$small: 2.4rem;
+$medium: 3.2rem;
+$large: 4rem;
+$extra-large: 4.8rem;
+$huge: 5.6rem;
+
+$mobile-spacing: 1.6rem;
+$desktop-spacing: 2.4rem;
+
+///////////////////////////////
+// WIDTHS
+$desktop-max-width: 120rem;
+
+//////////////////////////////////////
+// SEPARATORS
+$separator-line: 1px solid $color-lighter-accent;

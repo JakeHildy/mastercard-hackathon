@@ -1,0 +1,44 @@
+@use './../../../styles/partials/variables' as *;
+@use './../../../styles/partials/mixins' as *;
+@use './../../../styles/partials/typography' as *;
+
+.navbar {
+  background-color: $color-navbar-background;
+  box-shadow: $shadow-nav-bar;
+
+  &__container {
+    padding: 1rem $mobile-spacing;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $desktop-max-width;
+    @include tablet {
+      padding: 1rem $desktop-spacing;
+    }
+    @include desktop {
+      margin: 0 auto;
+    }
+  }
+
+  &__browse-link {
+    text-decoration: none;
+  }
+
+  &__home-text {
+    @include typo-navbar-home;
+  }
+
+  &__home-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile-icon {
+    width: 4rem;
+    cursor: pointer;
+
+    @include tablet {
+      width: 5rem;
+    }
+  }
+}
