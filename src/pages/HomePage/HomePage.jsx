@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './HomePage.scss';
 import { Link } from 'react-router-dom';
 import Map from './../../components/atoms/Map/Map';
 import InputField from './../../components/atoms/InputField/InputField';
@@ -15,11 +16,11 @@ export class HomePage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="home-page">
         <h1>Home Page</h1>
         <Link to="/home">Home</Link>
         <Link to="/another-page">Another Page</Link>
-        <Map lat="21.0" long="14" />
+        <Map lat="49.28" long="-123.1207" />
         <InputField
           name="sampleInput"
           label="Input Field"

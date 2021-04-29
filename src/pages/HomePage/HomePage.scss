@@ -1,0 +1,15 @@
+@use './../../styles/partials/variables' as *;
+@use './../../styles/partials/mixins' as *;
+@use './../../styles/partials/typography' as *;
+
+.home-page {
+  padding: $small $mobile-spacing;
+  display: flex;
+  flex-direction: column;
+  max-width: $desktop-max-width;
+
+  @include desktop {
+    margin: 0 auto;
+    padding: $small $desktop-spacing;
+  }
+}

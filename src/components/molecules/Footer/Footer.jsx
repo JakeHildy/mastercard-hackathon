@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footer">
       <h2 className="footer__title">Mastercard Hackathon!</h2>
-      <p className="footer__legal">&copy; Faraz, Anthony, Ajit, Shwetank, Dae, Heather, Hilal, Nasiru, Gab</p>
+      <p className="footer__legal">&copy; Faraz, Anthony, Ajit, Shwetank, Dae, Heather, Hilal, Nasiru, Jacob, Gab</p>
     </div>
   );
 }
