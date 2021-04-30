@@ -1,0 +1,57 @@
+@use './../../styles/partials/variables' as *;
+@use './../../styles/partials/mixins' as *;
+@use './../../styles/partials/typography' as *;
+
+.second-page {
+  padding: 3.8rem;
+
+  &__logo-container {
+    margin-top: 3rem;
+    margin-bottom: 20rem;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  @mixin box {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+  }
+
+  &__corner-tl {
+    @include box;
+    top: 0;
+    left: 0;
+    border-top: 3px solid #e75b4c;
+    border-left: 3px solid #e75b4c;
+  }
+  &__corner-tr {
+    @include box;
+    top: 0;
+    right: 0;
+    border-top: 3px solid #e75b4c;
+    border-right: 3px solid #e75b4c;
+  }
+  &__corner-br {
+    @include box;
+    bottom: 0;
+    right: 0;
+    border-right: 3px solid #e75b4c;
+    border-bottom: 3px solid #e75b4c;
+  }
+  &__corner-bl {
+    @include box;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid #e75b4c;
+    border-left: 3px solid #e75b4c;
+  }
+
+  &__logo {
+    width: 8rem;
+  }
+}

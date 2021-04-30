@@ -3,16 +3,22 @@ import './HomePage.scss';
 import Modal from './../../components/atoms/Modal/Modal';
 
 export class HomePage extends Component {
-  state = {};
-
-  handleChange = (e) => {
-    e.preventDefault();
-    this.setState({ [e.target.name]: e.target.value });
+  state = {
+    showModal: false,
   };
 
   handleBuyNowPressed = (e) => {
     e.preventDefault();
-    console.log('Buy Now Pressed');
+    this.setState({ showModal: true });
+  };
+
+  handleFaceIdClicked = (e) => {
+    console.log('Face Id Clicked');
+  };
+
+  handleCloseModal = (e) => {
+    console.log('Close Modal');
+    this.setState({ showModal: false });
   };
 
   render() {
@@ -24,7 +30,12 @@ export class HomePage extends Component {
         >
           Buy now
         </button>
-        <Modal />
+        {this.state.showModal && (
+          <Modal
+            handleFaceIdClick={this.handleFaceIdClicked}
+            handleClose={this.handleCloseModal}
+          />
+        )}
       </div>
     );
   }

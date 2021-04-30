@@ -3,4 +3,60 @@
 @use './../../../styles/partials/typography' as *;
 
 .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 76rem;
+
+  &__popup {
+    width: 85vw;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 4rem 4.5rem;
+    position: relative;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: #999;
+  }
+
+  &__popup-option {
+    border: 1px solid #efefef;
+    padding: 1rem 1rem 1rem 3.7rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-bottom: 2.2rem;
+    }
+
+    &:active {
+      background-color: darken(#fff, 1%);
+    }
+  }
+
+  &__logo {
+    height: 3.6rem;
+    margin-right: 1.1rem;
+  }
+
+  &__popup-text {
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #000;
+  }
+
+  &__popup-mic {
+    display: flex;
+    justify-content: center;
+    width: 3.6rem;
+    margin-right: 1.1rem;
+  }
 }

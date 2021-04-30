@@ -8,8 +8,8 @@ import {
 import './styles/global.scss';
 import NavBar from './components/molecules/NavBar/NavBar';
 import Footer from './components/molecules/Footer/Footer';
-import AnotherPage from './pages/AnotherPage/AnotherPage';
 import HomePage from './pages/HomePage/HomePage';
+import SecondPage from './pages/SecondPage/SecondPage';
 
 class App extends Component {
   render() {
@@ -17,8 +17,16 @@ class App extends Component {
       <div className="App">
         <Router>
           <Switch>
-            <Route path="/home" component={HomePage} />
-            <Redirect from="/" to="/home" />
+            <Route
+              path="/"
+              exact
+              render={(routerProps) => <HomePage {...routerProps} />}
+            />
+            <Route
+              path="/second-page"
+              render={(routerProps) => <SecondPage {...routerProps} />}
+            />
+            {/* <Redirect from="/" to="/home" /> */}
           </Switch>
         </Router>
       </div>
