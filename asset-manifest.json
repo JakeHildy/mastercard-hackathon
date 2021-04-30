@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mastercard-hackathon/static/css/main.e57eb485.chunk.css",
+    "main.css": "/mastercard-hackathon/static/css/main.292fe591.chunk.css",
     "main.js": "/mastercard-hackathon/static/js/main.ef69a13e.chunk.js",
     "main.js.map": "/mastercard-hackathon/static/js/main.ef69a13e.chunk.js.map",
     "runtime-main.js": "/mastercard-hackathon/static/js/runtime-main.52c43c52.js",
@@ -8,7 +8,7 @@
     "static/js/2.3b8c15df.chunk.js": "/mastercard-hackathon/static/js/2.3b8c15df.chunk.js",
     "static/js/2.3b8c15df.chunk.js.map": "/mastercard-hackathon/static/js/2.3b8c15df.chunk.js.map",
     "index.html": "/mastercard-hackathon/index.html",
-    "static/css/main.e57eb485.chunk.css.map": "/mastercard-hackathon/static/css/main.e57eb485.chunk.css.map",
+    "static/css/main.292fe591.chunk.css.map": "/mastercard-hackathon/static/css/main.292fe591.chunk.css.map",
     "static/js/2.3b8c15df.chunk.js.LICENSE.txt": "/mastercard-hackathon/static/js/2.3b8c15df.chunk.js.LICENSE.txt",
     "static/media/Card.46a45d96.png": "/mastercard-hackathon/static/media/Card.46a45d96.png",
     "static/media/Checked.abd4801a.svg": "/mastercard-hackathon/static/media/Checked.abd4801a.svg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.52c43c52.js",
     "static/js/2.3b8c15df.chunk.js",
-    "static/css/main.e57eb485.chunk.css",
+    "static/css/main.292fe591.chunk.css",
     "static/js/main.ef69a13e.chunk.js"
   ]
 }
