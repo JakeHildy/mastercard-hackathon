@@ -35,6 +35,10 @@ class SecondPage extends Component {
       console.log('Timer Done');
       this.setState({ showCircle: true });
     }, 2000);
+    setTimeout(() => {
+      console.log('Timer Done');
+      this.props.history.push('/success');
+    }, 5000);
   };
 
   goBack = () => {
