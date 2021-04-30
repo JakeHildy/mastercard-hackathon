@@ -1,0 +1,32 @@
+@use './../../../styles/partials/variables' as *;
+@use './../../../styles/partials/mixins' as *;
+@use './../../../styles/partials/typography' as *;
+
+.video {
+  &__container {
+    border-radius: 5px;
+    position: relative;
+  }
+
+  &__input {
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+  &__videoFeed {
+    width: 100%;
+    height: 65vw;
+    display: block;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: min(32vw, 24rem);
+    height: min(42.6vw, 32rem);
+    border: 4px solid red;
+    border-radius: 45%;
+  }
+}

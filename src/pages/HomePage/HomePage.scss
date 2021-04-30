@@ -6,6 +6,7 @@
   padding: $small $mobile-spacing;
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: $desktop-max-width;
 
   @include desktop {
