@@ -9,7 +9,7 @@ class VerificationSuccess extends Component {
 
   activateRedirect = () => {
     setTimeout(() => {
-      this.props.history.push('/');
+      this.props.history.push('/final-page');
     }, 2500);
   };
 
