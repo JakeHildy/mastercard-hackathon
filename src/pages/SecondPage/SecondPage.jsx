@@ -43,7 +43,7 @@ class SecondPage extends Component {
                 this.state.playing ? '--on' : '--off'
               }`}
             ></div>
-            <img className="second-page__logo" src={FaceLogo} />
+            <img className="second-page__logo" alt="FaceLogo" src={FaceLogo} />
           </div>
           <div className="second-page__corner-tl"></div>
           <div className="second-page__corner-tr"></div>
