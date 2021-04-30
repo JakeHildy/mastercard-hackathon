@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from 'react-router-dom';
 import './styles/global.scss';
 import HomePage from './pages/HomePage/HomePage';
 import SecondPage from './pages/SecondPage/SecondPage';
@@ -36,7 +41,7 @@ class App extends Component {
                   <VerificationFailed {...routerProps} />
                 )}
               />
-              {/* <Redirect from="/" to="/home" /> */}
+              <Redirect from="/mastercard-hackathon" to="/" />
             </Switch>
             <div className="iphone"></div>
           </div>
