@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage/HomePage';
 import SecondPage from './pages/SecondPage/SecondPage';
 import VerificationSuccess from './pages/VerificationSuccess/VerificationSuccess';
 import VerificationFailed from './pages/VerificationFailed/VerificationFailed';
+import FinalPage from './pages/FinalPage/FinalPage';
 
 class App extends Component {
   render() {
@@ -40,6 +41,10 @@ class App extends Component {
                 render={(routerProps) => (
                   <VerificationFailed {...routerProps} />
                 )}
+              />
+              <Route
+                path="/final-page"
+                render={(routerProps) => <FinalPage {...routerProps} />}
               />
               <Redirect from="/mastercard-hackathon" to="/" />
             </Switch>
