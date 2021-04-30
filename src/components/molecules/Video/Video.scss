@@ -20,22 +20,22 @@
     display: block;
   }
 
-  &__overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: min(32vw, 24rem);
-    height: min(42.6vw, 32rem);
-    border: 2px dashed #fff;
-    border-radius: 60%;
+  // &__overlay {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translateX(-50%) translateY(-50%);
+  //   width: min(32vw, 24rem);
+  //   height: min(42.6vw, 32rem);
+  //   border: 2px dashed #fff;
+  //   border-radius: 60%;
 
-    &--on {
-      display: block;
-    }
+  //   &--on {
+  //     display: block;
+  //   }
 
-    &--off {
-      display: none;
-    }
-  }
+  //   &--off {
+  //     display: none;
+  //   }
+  // }
 }

@@ -14,6 +14,7 @@ export class HomePage extends Component {
   //   this.setState({ showCard: true });
   // };
 
+
   handleVerificationClicked = (e) => {
     console.log('Verify Payment Clicked');
     e.preventDefault();
@@ -44,9 +45,6 @@ export class HomePage extends Component {
             // handleClose={this.handleCloseModal}
           />
         )}
-        {/* {this.state.showCard && (
-          <PaymentCard handleVerification={this.handleVerificationClicked} />
-        )} */}
       </div>
     );
   }
