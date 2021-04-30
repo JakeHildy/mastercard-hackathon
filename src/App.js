@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './styles/global.scss';
 import HomePage from './pages/HomePage/HomePage';
 import SecondPage from './pages/SecondPage/SecondPage';
-import VerificationSuccess from "./pages/VerificationSuccess/VerificationSuccess";
-import VerificationFailed from "./pages/VerificationFailed/VerificationFailed";
+import VerificationSuccess from './pages/VerificationSuccess/VerificationSuccess';
+import VerificationFailed from './pages/VerificationFailed/VerificationFailed';
 
 class App extends Component {
   render() {
@@ -25,12 +25,16 @@ class App extends Component {
 
               <Route
                 path="/success"
-                render={(routerProps) => <VerificationSuccess {...routerProps} />}
+                render={(routerProps) => (
+                  <VerificationSuccess {...routerProps} />
+                )}
               />
 
               <Route
                 path="/failed"
-                render={(routerProps) => <VerificationFailed {...routerProps} />}
+                render={(routerProps) => (
+                  <VerificationFailed {...routerProps} />
+                )}
               />
               {/* <Redirect from="/" to="/home" /> */}
             </Switch>
