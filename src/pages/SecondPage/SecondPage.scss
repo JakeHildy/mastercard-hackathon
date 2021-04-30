@@ -7,7 +7,7 @@
 
   &__logo-container {
     margin-top: 3rem;
-    margin-bottom: 20rem;
+    margin-bottom: 28rem;
     width: 100%;
     height: 35rem;
     display: flex;
@@ -22,78 +22,39 @@
     position: absolute;
   }
 
-  &__corner-tl {
-    @include box;
-    top: 0;
-    left: 0;
-    border-top: 3px solid #e75b4c;
-    border-left: 3px solid #e75b4c;
-  }
-  &__corner-tr {
-    @include box;
-    top: 0;
-    right: 0;
-    border-top: 3px solid #e75b4c;
-    border-right: 3px solid #e75b4c;
-  }
-  &__corner-br {
-    @include box;
-    bottom: 0;
-    right: 0;
-    border-right: 3px solid #e75b4c;
-    border-bottom: 3px solid #e75b4c;
-  }
-  &__corner-bl {
-    @include box;
-    bottom: 0;
-    left: 0;
-    border-bottom: 3px solid #e75b4c;
-    border-left: 3px solid #e75b4c;
-  }
-
   &__logo {
-    width: 8rem;
+    width: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    transition: all 1s;
   }
 
-  @mixin button {
-    padding: 1.5rem 2rem;
+  &__scan-circle {
     width: 100%;
-    border: none;
-    border-radius: 20rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    transition: all 0.2s;
-    font-family: 'Comfortaa';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: spinCircle 2s;
+  }
+
+  @keyframes spinCircle {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
   }
 
   &__buttons {
     display: flex;
+    justify-content: center;
     width: 100%;
   }
 
   &__button {
-    @include button;
-
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
-    &--cancel {
-      background-color: #fff;
-      border: 1px solid #000;
-      &:active {
-        background-color: darken(#fff, 5%);
-      }
-    }
-
-    &--scan {
-      background-color: #e75b4c;
-      &:active {
-        background-color: darken(#e75b4c, 5%);
-      }
-    }
   }
 }

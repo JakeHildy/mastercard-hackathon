@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './SecondPage.scss';
-import FaceLogo from './../../assets/icons/Face ID.png';
+import BorderNoLogoFace from './../../assets/images/face-id-box-no-logo.svg';
+import CancelButton from './../../assets/icons/cancel-x-button.svg';
+import ScanCircle from './../../assets/icons/scan circle.svg';
+
 import './../../components/molecules/Video/Video.scss';
 
 class SecondPage extends Component {
-  state = { playing: false };
+  state = { playing: false, showCircle: false };
 
   startVideo = () => {
     this.setState({ playing: true });
@@ -26,6 +29,19 @@ class SecondPage extends Component {
     video.srcObject.getTracks()[0].stop();
   };
 
+  componentDidMount = () => {
+    this.startVideo();
+    setTimeout(() => {
+      console.log('Timer Done');
+      this.setState({ showCircle: true });
+    }, 2000);
+  };
+
+  goBack = () => {
+    this.stopVideo();
+    this.props.history.goBack();
+  };
+
   render() {
     return (
       <div className="second-page">
@@ -38,31 +54,22 @@ class SecondPage extends Component {
               autoPlay
               className="video__videoFeed"
             ></video>
-            <div
-              className={`video__overlay video__overlay${
-                this.state.playing ? '--on' : '--off'
-              }`}
-            ></div>
-            <img className="second-page__logo" alt="FaceLogo" src={FaceLogo} />
+            <img
+              className="second-page__logo"
+              alt="FaceLogo"
+              src={BorderNoLogoFace}
+            />
+            {this.state.showCircle && (
+              <img
+                className="second-page__scan-circle"
+                alt="FaceLogo"
+                src={ScanCircle}
+              />
+            )}
           </div>
-          <div className="second-page__corner-tl"></div>
-          <div className="second-page__corner-tr"></div>
-          <div className="second-page__corner-br"></div>
-          <div className="second-page__corner-bl"></div>
         </div>
         <div className="second-page__buttons">
-          <button
-            className="second-page__button second-page__button--cancel"
-            onClick={this.stopVideo}
-          >
-            Cancel
-          </button>
-          <button
-            onClick={this.startVideo}
-            className="second-page__button second-page__button--scan"
-          >
-            Scan
-          </button>
+          <img src={CancelButton} alt="Cancel" onClick={this.goBack} />
         </div>
       </div>
     );
