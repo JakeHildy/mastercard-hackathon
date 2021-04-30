@@ -22,6 +22,7 @@
     border-radius: 20rem;
     font-size: 1.6rem;
     font-weight: 600;
+    transition: all 0.2s;
 
     &:active {
       background-color: darken(#e75b4c, 5%);

@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
 import './HomePage.scss';
-import { Link } from 'react-router-dom';
-import Map from './../../components/atoms/Map/Map';
-import InputField from './../../components/atoms/InputField/InputField';
-import Video from './../../components/molecules/Video/Video';
+import Modal from './../../components/atoms/Modal/Modal';
 
 export class HomePage extends Component {
-  state = {
-    sampleInput: '',
-    playing: false,
-    setPlaying: false,
-  };
+  state = {};
 
   handleChange = (e) => {
     e.preventDefault();
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleBuyNowPressed = () => {
+  handleBuyNowPressed = (e) => {
+    e.preventDefault();
     console.log('Buy Now Pressed');
   };
 
@@ -30,6 +24,7 @@ export class HomePage extends Component {
         >
           Buy now
         </button>
+        <Modal />
       </div>
     );
   }
