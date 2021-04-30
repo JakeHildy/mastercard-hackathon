@@ -1,16 +1,19 @@
 .final-page {
   &__background {
-    width: 375px;
+    width: 385px;
     background-image: url('../../assets/images/final-background.PNG');
     height: 76rem;
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: center;
     position: relative;
-    top: -40px;
+    top: -10px;
+    left: -10px;
     border-radius: 50px;
     z-index: 0;
+   
   }
+
 
   &__failed {
     width: 100px;
