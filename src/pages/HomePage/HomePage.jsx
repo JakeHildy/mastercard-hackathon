@@ -41,9 +41,7 @@ export class HomePage extends Component {
             handleClose={this.handleCloseModal}
           />
         )}
-        {/* {this.state.showCard && (
-          // <PaymentCard handleVerification={this.handleVerificationClicked} />
-        )} */}
+
       </div>
     );
   }
