@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/mastercard-hackathon/static/css/main.2915e141.chunk.css",
-    "main.js": "/mastercard-hackathon/static/js/main.339e2e5f.chunk.js",
-    "main.js.map": "/mastercard-hackathon/static/js/main.339e2e5f.chunk.js.map",
+    "main.css": "/mastercard-hackathon/static/css/main.b2634b97.chunk.css",
+    "main.js": "/mastercard-hackathon/static/js/main.a4526140.chunk.js",
+    "main.js.map": "/mastercard-hackathon/static/js/main.a4526140.chunk.js.map",
     "runtime-main.js": "/mastercard-hackathon/static/js/runtime-main.52c43c52.js",
     "runtime-main.js.map": "/mastercard-hackathon/static/js/runtime-main.52c43c52.js.map",
-    "static/js/2.c3e78b25.chunk.js": "/mastercard-hackathon/static/js/2.c3e78b25.chunk.js",
-    "static/js/2.c3e78b25.chunk.js.map": "/mastercard-hackathon/static/js/2.c3e78b25.chunk.js.map",
+    "static/js/2.36769d12.chunk.js": "/mastercard-hackathon/static/js/2.36769d12.chunk.js",
+    "static/js/2.36769d12.chunk.js.map": "/mastercard-hackathon/static/js/2.36769d12.chunk.js.map",
     "index.html": "/mastercard-hackathon/index.html",
-    "static/css/main.2915e141.chunk.css.map": "/mastercard-hackathon/static/css/main.2915e141.chunk.css.map",
-    "static/js/2.c3e78b25.chunk.js.LICENSE.txt": "/mastercard-hackathon/static/js/2.c3e78b25.chunk.js.LICENSE.txt",
-    "static/media/InputField.scss": "/mastercard-hackathon/static/media/Poppins-Thin.a61eaf4c.ttf",
-    "static/media/account_circle_black_24dp.189d9459.svg": "/mastercard-hackathon/static/media/account_circle_black_24dp.189d9459.svg",
-    "static/media/error-24px.eed74db2.svg": "/mastercard-hackathon/static/media/error-24px.eed74db2.svg",
-    "static/media/search_black_24dp.4f1c78e9.svg": "/mastercard-hackathon/static/media/search_black_24dp.4f1c78e9.svg"
+    "static/css/main.b2634b97.chunk.css.map": "/mastercard-hackathon/static/css/main.b2634b97.chunk.css.map",
+    "static/js/2.36769d12.chunk.js.LICENSE.txt": "/mastercard-hackathon/static/js/2.36769d12.chunk.js.LICENSE.txt",
+    "static/media/Card.46a45d96.png": "/mastercard-hackathon/static/media/Card.46a45d96.png",
+    "static/media/Checked.abd4801a.svg": "/mastercard-hackathon/static/media/Checked.abd4801a.svg",
+    "static/media/Failed.66226f6d.svg": "/mastercard-hackathon/static/media/Failed.66226f6d.svg",
+    "static/media/Video.scss": "/mastercard-hackathon/static/media/Poppins-Thin.a61eaf4c.ttf",
+    "static/media/VerificationFailed.scss": "/mastercard-hackathon/static/media/VFailed.36128c2c.svg",
+    "static/media/VerificationSuccess.scss": "/mastercard-hackathon/static/media/VSuccess.ad710023.svg",
+    "static/media/HomePage.scss": "/mastercard-hackathon/static/media/background.51be9f8f.PNG",
+    "static/media/cancel-x-button.4becafde.svg": "/mastercard-hackathon/static/media/cancel-x-button.4becafde.svg",
+    "static/media/face-id-box-no-logo.d4f08424.svg": "/mastercard-hackathon/static/media/face-id-box-no-logo.d4f08424.svg",
+    "static/media/global.scss": "/mastercard-hackathon/static/media/iphone-background.40c9226a.PNG",
+    "static/media/scan circle.8ef32f4f.svg": "/mastercard-hackathon/static/media/scan circle.8ef32f4f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.52c43c52.js",
-    "static/js/2.c3e78b25.chunk.js",
-    "static/css/main.2915e141.chunk.css",
-    "static/js/main.339e2e5f.chunk.js"
+    "static/js/2.36769d12.chunk.js",
+    "static/css/main.b2634b97.chunk.css",
+    "static/js/main.a4526140.chunk.js"
   ]
 }
