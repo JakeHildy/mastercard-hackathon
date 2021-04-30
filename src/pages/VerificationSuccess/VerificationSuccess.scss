@@ -1,0 +1,47 @@
+.verification {
+
+    &__background {
+        width: 375px;
+        background-image: url("../../assets/images/VSuccess.svg");
+        height: 76rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: center;
+        position: relative;
+        top: -40px;
+        border-radius: 50px;
+        z-index: 0;
+    }
+    
+  
+    &__check {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        z-index: 1000;
+        top: -600px;
+        left: 140px;
+        animation: fadein 2s;
+
+        @keyframes fadein {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    }
+  }
+  
+
+//   &__button {
+//     position: absolute;
+//     left: 11rem;
+//     top: 40rem;
+//     padding: 1.7rem 2rem;
+//     width: 16.5rem;
+//     background-color: #e75b4c;
+//     border: none;
+//     border-radius: 20rem;
+//     font-size: 1.6rem;
+//     font-weight: 600;
+//     transition: all 0.2s;
+//     color: #FFF;
+// }
