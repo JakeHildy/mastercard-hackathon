@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Video.scss';
 
 export class Video extends Component {
-  state = { playing: false };
+  state = { playing: true };
 
   startVideo = () => {
     this.setState({ playing: true });

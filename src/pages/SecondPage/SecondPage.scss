@@ -53,5 +53,47 @@
 
   &__logo {
     width: 8rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  @mixin button {
+    padding: 1.5rem 2rem;
+    width: 100%;
+    border: none;
+    border-radius: 20rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    font-family: 'Comfortaa';
+  }
+
+  &__buttons {
+    display: flex;
+    width: 100%;
+  }
+
+  &__button {
+    @include button;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    &--cancel {
+      background-color: #fff;
+      border: 1px solid #000;
+      &:active {
+        background-color: darken(#fff, 5%);
+      }
+    }
+
+    &--scan {
+      background-color: #e75b4c;
+      &:active {
+        background-color: darken(#e75b4c, 5%);
+      }
+    }
   }
 }
