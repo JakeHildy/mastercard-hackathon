@@ -23,6 +23,7 @@
     font-size: 1.6rem;
     font-weight: 600;
     transition: all 0.2s;
+    cursor: pointer;
 
     &:active {
       background-color: darken(#e75b4c, 5%);
