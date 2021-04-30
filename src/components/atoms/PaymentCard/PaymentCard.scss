@@ -1,0 +1,29 @@
+@use './../../../styles/partials/variables' as *;
+@use './../../../styles/partials/mixins' as *;
+@use './../../../styles/partials/typography' as *;
+
+.payment-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76rem;
+
+  &__popup {
+    width: 85vw;
+    padding: 0 4.5rem;
+    margin-bottom: -31rem;
+    position: relative;
+  }
+  &__button {
+    position: absolute;
+    bottom: 2em;
+    right: 8.1rem;
+    font-size: 2rem;
+    border-radius: 20rem;
+    width: 305px;
+    height: 51px;
+    opacity:0;
+    z-index: 99999;
+  }
+  
+}
