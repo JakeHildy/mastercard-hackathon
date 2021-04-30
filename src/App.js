@@ -16,18 +16,21 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Switch>
-            <Route
-              path="/"
-              exact
-              render={(routerProps) => <HomePage {...routerProps} />}
-            />
-            <Route
-              path="/second-page"
-              render={(routerProps) => <SecondPage {...routerProps} />}
-            />
-            {/* <Redirect from="/" to="/home" /> */}
-          </Switch>
+          <div className="container">
+            <Switch>
+              <Route
+                path="/"
+                exact
+                render={(routerProps) => <HomePage {...routerProps} />}
+              />
+              <Route
+                path="/second-page"
+                render={(routerProps) => <SecondPage {...routerProps} />}
+              />
+              {/* <Redirect from="/" to="/home" /> */}
+            </Switch>
+            <div className="iphone"></div>
+          </div>
         </Router>
       </div>
     );
