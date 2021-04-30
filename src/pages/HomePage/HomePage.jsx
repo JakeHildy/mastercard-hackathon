@@ -10,7 +10,7 @@ export class HomePage extends Component {
 
   handleBuyNowPressed = (e) => {
     e.preventDefault();
-    this.setState({ showCard: true });
+    this.setState({ showModal: true });
   };
 
   handleVerificationClicked = (e) => {
@@ -41,9 +41,7 @@ export class HomePage extends Component {
             handleClose={this.handleCloseModal}
           />
         )}
-        {/* {this.state.showCard && (
-          <PaymentCard handleVerification={this.handleVerificationClicked} />
-        )} */}
+
       </div>
     );
   }
