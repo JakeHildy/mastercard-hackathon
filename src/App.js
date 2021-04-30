@@ -16,12 +16,10 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <NavBar />
           <Switch>
             <Route path="/home" component={HomePage} />
             <Redirect from="/" to="/home" />
           </Switch>
-          <Footer />
         </Router>
       </div>
     );

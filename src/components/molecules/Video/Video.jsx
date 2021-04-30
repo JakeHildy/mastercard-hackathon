@@ -25,7 +25,6 @@ export class Video extends Component {
   };
 
   render() {
-    // const { playing } = this.state;
     return (
       <>
         <div className="video__container">

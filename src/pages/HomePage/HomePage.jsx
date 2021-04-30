@@ -17,10 +17,19 @@ export class HomePage extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  handleBuyNowPressed = () => {
+    console.log('Buy Now Pressed');
+  };
+
   render() {
     return (
       <div className="home-page">
-        <Video />
+        <button
+          className="home-page__button"
+          onClick={this.handleBuyNowPressed}
+        >
+          Buy now
+        </button>
       </div>
     );
   }

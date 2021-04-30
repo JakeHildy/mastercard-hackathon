@@ -3,14 +3,28 @@
 @use './../../styles/partials/typography' as *;
 
 .home-page {
-  padding: $small $mobile-spacing;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: $desktop-max-width;
+  width: 100%;
+  background-image: url('./../../assets/images/background.PNG');
+  height: 76rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: center;
+  position: relative;
 
-  @include desktop {
-    margin: 0 auto;
-    padding: $small $desktop-spacing;
+  &__button {
+    position: absolute;
+    left: 19.5rem;
+    top: 67.4rem;
+    padding: 1.7rem 2rem;
+    width: 16.5rem;
+    background-color: #e75b4c;
+    border: none;
+    border-radius: 20rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    &:active {
+      background-color: darken(#e75b4c, 5%);
+    }
   }
 }
