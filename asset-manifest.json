@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/mastercard-hackathon/static/css/main.2915e141.chunk.css",
+    "main.js": "/mastercard-hackathon/static/js/main.339e2e5f.chunk.js",
+    "main.js.map": "/mastercard-hackathon/static/js/main.339e2e5f.chunk.js.map",
+    "runtime-main.js": "/mastercard-hackathon/static/js/runtime-main.52c43c52.js",
+    "runtime-main.js.map": "/mastercard-hackathon/static/js/runtime-main.52c43c52.js.map",
+    "static/js/2.c3e78b25.chunk.js": "/mastercard-hackathon/static/js/2.c3e78b25.chunk.js",
+    "static/js/2.c3e78b25.chunk.js.map": "/mastercard-hackathon/static/js/2.c3e78b25.chunk.js.map",
+    "index.html": "/mastercard-hackathon/index.html",
+    "static/css/main.2915e141.chunk.css.map": "/mastercard-hackathon/static/css/main.2915e141.chunk.css.map",
+    "static/js/2.c3e78b25.chunk.js.LICENSE.txt": "/mastercard-hackathon/static/js/2.c3e78b25.chunk.js.LICENSE.txt",
+    "static/media/InputField.scss": "/mastercard-hackathon/static/media/Poppins-Thin.a61eaf4c.ttf",
+    "static/media/account_circle_black_24dp.189d9459.svg": "/mastercard-hackathon/static/media/account_circle_black_24dp.189d9459.svg",
+    "static/media/error-24px.eed74db2.svg": "/mastercard-hackathon/static/media/error-24px.eed74db2.svg",
+    "static/media/search_black_24dp.4f1c78e9.svg": "/mastercard-hackathon/static/media/search_black_24dp.4f1c78e9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52c43c52.js",
+    "static/js/2.c3e78b25.chunk.js",
+    "static/css/main.2915e141.chunk.css",
+    "static/js/main.339e2e5f.chunk.js"
+  ]
+}
