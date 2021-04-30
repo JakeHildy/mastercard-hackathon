@@ -16,3 +16,24 @@ html {
   font-family: 'Comfortaa', sans-serif;
   color: $color-dark-shades;
 }
+
+.container {
+  width: 375px;
+  margin: 0 auto;
+  margin-top: 8rem;
+  position: relative;
+}
+
+.iphone {
+  position: absolute;
+  top: -6rem;
+  left: -5.4rem;
+  z-index: -1;
+  // border: 1px solid red;
+  background-image: url('./../assets/images/iphone-background.PNG');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 55rem;
+  height: 90rem;
+}
