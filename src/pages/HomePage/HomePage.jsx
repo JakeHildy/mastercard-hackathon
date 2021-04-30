@@ -14,7 +14,6 @@ export class HomePage extends Component {
   //   this.setState({ showCard: true });
   // };
 
-
   handleVerificationClicked = (e) => {
     console.log('Verify Payment Clicked');
     e.preventDefault();
