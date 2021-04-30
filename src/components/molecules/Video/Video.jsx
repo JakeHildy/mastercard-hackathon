@@ -25,6 +25,7 @@ export class Video extends Component {
   };
 
   render() {
+    // const { playing } = this.state;
     return (
       <>
         <div className="video__container">
@@ -35,7 +36,11 @@ export class Video extends Component {
             autoPlay
             className="video__videoFeed"
           ></video>
-          <div className="video__overlay"></div>
+          <div
+            className={`video__overlay video__overlay${
+              this.state.playing ? '--on' : '--off'
+            }`}
+          ></div>
         </div>
         <div className="video__input">
           {this.state.playing ? (
