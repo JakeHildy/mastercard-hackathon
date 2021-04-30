@@ -5,11 +5,16 @@ import Modal from './../../components/atoms/Modal/Modal';
 export class HomePage extends Component {
   state = {
     showModal: false,
+    showCard: false,
   };
 
   handleBuyNowPressed = (e) => {
     e.preventDefault();
-    this.setState({ showModal: true });
+    this.setState({ showCard: true });
+  };
+
+  handleVerificationClicked = (e) => {
+    console.log('Face Id Clicked');
   };
 
   handleFaceIdClicked = (e) => {
@@ -35,6 +40,9 @@ export class HomePage extends Component {
             handleFaceIdClick={this.handleFaceIdClicked}
             handleClose={this.handleCloseModal}
           />
+        )}
+        {this.state.showCard && (
+          <PaymentCard handleVerification={this.handleVerificationClicked} />
         )}
       </div>
     );
